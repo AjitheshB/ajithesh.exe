@@ -9,16 +9,19 @@
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
 
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
 
         <header class="navbar">
-            <a href="#" class="logo">ajithesh.exe</a>
+            <div class="nav-column">
+                <a href="#home" class="logo">ajithesh<span>.exe</span></a>
 
-            <div class="nav-stat">
-                <span class="stat-dot"></span>
-                BUILDING
+                <div class="nav-stat">
+                    <span class="stat-dot"></span>
+                    BUILDING
+                </div>
             </div>
 
             <nav>
@@ -30,11 +33,60 @@
         </header>
 
         <main>
-            <section class="hero">
-                <div class="hero-roles">
-                    <span>PORTFOLIO</span>
-                </div>
+            <!-- HOME -->
+            <section class="hero section-wrap" id="home">
+                <div class="hero-content">
+                    <p class="hero-eyebrow">STUDENT // BUILDER</p>
 
+                    <h1>hi, i'm ajithesh<span>.</span></h1>
+
+                    <p class="hero-desc">
+                        a high school student interested in software, web
+                        development and building things.
+                    </p>
+
+                    <div class="hero-links">
+                        <a href="#projects">EXPLORE MY WORK<span>↘</span></a>
+                        <a href="https://github.com/AjitheshB"
+                            target="_blank"
+                            rel="noopener noreferrer">GITHUB ↗</a>
+                    </div>
+
+                    <div class="terminal-widget">
+                        <div class="teminal-header">
+                            <div class="terminal-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <span class="termminal-title">ajithesh@portfolio ~</span>
+                        </div>
+
+                        <div class="terminal-body" id="terminal-op" aria-live="polite">
+                            <p class="terminal-muted">ajithesh.exe</p>
+                            <p class="terminal-muted">type <span class="terminal-green">'help'</span> to begin</p>
+
+                        </div>
+
+                        <form class="terminal-input-line" id="terminal-form">
+                            <label for="terminal-input" class="terminal-prompt">visitor@web: ~$</label>
+
+                            <input
+                                id="terminal-input"
+                                type="text"
+                                placeholder="type a command..."
+                                autocomplete="off"
+                                aria-label="Terminal command"
+                            >
+
+                            <div class="terminal-footer">
+                                <span>VANILLA JS</span>
+                                <span>TYPE HELP FOR COMMANDS</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </section>
         </main>
 
