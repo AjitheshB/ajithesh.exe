@@ -159,9 +159,15 @@ a {
 
 .hero-desc {
     font-family: monospace;
-    margin: 40px 5px 60px;
+    margin: 1.5rem 0 2rem;
     font-size:0.8rem;
+    color:var(--muted);
+    max-width: 440px;
 
+}
+
+.hero-links {
+    gap:0.5rem;
 }
 
 .hero-links a {
@@ -184,4 +190,77 @@ a {
 
 .hero-links {
     margin:5px 20px 40px;
+}
+
+.terminal-widget {
+    width:100%;
+    min-width:0;
+    max-width:400px;
+
+    transform:scale(1);
+    transform-origin: center;
+
+    overflow: hidden;
+    border:1px solid var(--border);
+    border-radius: 8px;
+
+    background: var(--surface);
+    box-shadow: 0 24px 80px #00000035;
+    padding:10px;
+
+    transition: all 200ms ease;
+}
+
+.terminal-widget:hover {
+    border-color:var(--green);
+}
+
+.terminal-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:4rem;
+    width:100%;
+    padding:0.5rem;
+    background: #141714;
+    border-bottom: 1px solid #272c25;
+
+}
+
+.terminal-dots {
+    display:flex;
+    align-items: center;
+    gap:5px;
+}
+
+.terminal-dots span {
+    display:inline-block;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+
+}
+
+.min {
+    background-color: #FEBC2E;
+}
+
+.max {
+   background-color: #28C840;
+}
+
+.close {
+    background-color: #FF5F57;
+}
+
+@media (min-width: 1200px) {
+    .terminal-widget {
+        transform:scale(1.4);
+    }
+
+}
+
+.terminal-title {
+    font-size:0.8rem;
+    font-family:monospace;
 }
