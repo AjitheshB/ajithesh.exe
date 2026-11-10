@@ -205,16 +205,17 @@ a {
     backdrop-filter: blur(20px);
 
     box-shadow: 
-            0 0 25px rgba(181,243,109,0.15),
-            0 0 65px rgba(181,243,109,0.1),
-            0 0 120px rgba(181,243,109,0.05),
-            0 0 180px rgba(181,243,109,0.02),
+            0 0 25px rgba(168,85,247,0.15),
+            0 0 65px rgba(168,85,247,0.1),
+            0 0 120px rgba(168,85,247,0.05),
+            0 0 180px rgba(168,85,247,0.02),
             0 24px 80px #00000055;
 
     padding:0;
     width:100%;
     min-width:0;
     max-width:460px;
+    max-height:350px !important;
 
 
     transform:scale(1);
@@ -234,8 +235,11 @@ a {
 .terminal-widget:hover {
     border-color:var(--green);
     box-shadow: 
-                0 20px 60px #00000055
-                0 0 25px #b5f36d0c;
+            0 0 25px rgba(181,243,109,0.15),
+            0 0 65px rgba(181,243,109,0.1),
+            0 0 120px rgba(181,243,109,0.05),
+            0 0 180px rgba(181,243,109,0.02),
+            0 24px 80px #00000055;
 }
 
 .terminal-head {
