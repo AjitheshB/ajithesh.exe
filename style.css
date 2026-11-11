@@ -738,6 +738,7 @@ a {
     scroll-behavior: smooth;
 
     scrollbar-width: thin;
+    scrollbar-highlight-color: green;
     scrollbar-color: var(--purple) var(--surface)
 }
 
