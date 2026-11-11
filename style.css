@@ -767,3 +767,32 @@ a {
     width:35rem;
 
 }
+
+
+.contact-card {
+    background: var(--surface);
+
+
+    max-width:400px;
+    border-radius: 8px;
+    border:2px dotted var(--border);
+
+    transition:all 0.2s ease;
+    
+}
+
+.contact-card:hover {
+    background: var(--surface-hover);
+    filter:brightness(1.4);
+    transform:translateY(-8px);
+
+    border:2px solid var(--green);
+}
+
+.projects-grid.contact {
+    display:grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap:2rem;
+    column-gap: 3rem;
+    row-gap:3rem;
+}
