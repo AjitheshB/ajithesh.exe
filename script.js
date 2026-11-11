@@ -44,6 +44,7 @@ const projects = {
 
 terminalInput.addEventListener("keydown", (evnt) => {
     if (evnt.key !== "Enter") return
+    evnt.preventDefault()
 
     const cmd = terminalInput.value.trim()
 
