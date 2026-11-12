@@ -76,7 +76,7 @@ terminalInput.addEventListener("keydown", (evnt) => {
         window.open("https://github.com/AjitheshB", "_blank")
 
     } else if (cmd === "projects") {
-        response.textContent = "The Archive | MadrigalOS | Ajira | Nocturnal \n For more projects scroll down to the projects section \n Type 'open [project]' to view a project!!!"
+        response.textContent = "The Archive | MadrigalOS | Ajira | Nocturnal \n For more projects scroll down to the projects section "
 
     } else if (cmd.startsWith("echo ")) {
         response.textContent = cmd.slice(5)
