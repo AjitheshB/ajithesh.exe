@@ -531,6 +531,10 @@ a {
     transition: all 250ms ease;
 }
 
+.xp-card {
+    max-height: none;
+}
+
 .project-card:hover {
     transform:translateY(-6px);
     border-color: var(--green);
@@ -762,9 +766,11 @@ a {
 }
 
 .xp-card {
-    flex: 0 0 54rem;
+    flex: 0 0 32rem;
 
-    width:35rem;
+    width:32rem;
+    max-width: 85vw;
+    scroll-snap-align: start;
 
 }
 
@@ -832,3 +838,52 @@ a {
 .footer a:hover {
     color:var(--green);
 }
+
+.xp-section > a {
+    display: block;
+    flex: 0 0 27rem;
+    max-width:85vw;
+}
+
+.xp-section > a .xp-card {
+    width:100%;
+    max-width: none;
+    flex:initial;
+}
+
+.xp-section > .xp-card {
+    flex: 0 0 32rem;
+    max-width: 85vw;
+}
+
+.xp-content .content-1 {
+    max-width: none;
+    text-align: left;
+    margin: 0;
+    padding:10px 12px;
+    font-size: 0.9rem;
+    color:var(--text);
+    border-left: 4px solid var(--purple);
+    background-color: rgba(255,255,255,0.02);
+
+    transition: all 200ms ease;
+}
+
+.xp-content .content-1 + .content-1 {
+    margin-top: 8px;
+}
+
+
+.xp-content .content-1:hover {
+    border-left-color: var(--green);
+    background:var(--surface-hover);
+}
+
+.xp-content .content-1.feature {
+    background:rgba(120,220,150,0.1);
+}
+
+
+.xp-content .content-1.feature:hover {
+    background:rgba(196,181,253,0.15);
+} 
