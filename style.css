@@ -796,3 +796,39 @@ a {
     column-gap: 3rem;
     row-gap:3rem;
 }
+
+.footer {
+    align-items: center;
+    background:var(--surface);
+    border-top:2px dotted var(--border);
+    padding:50px;
+    text-align: center;
+}
+
+.footer h4 {
+    font-size:1.2rem;
+}
+
+.footer h4 span {
+    font-family: 'Cormorant Garamond', serif;
+    color:var(--purple);
+    font-size:1.6rem;
+    font-style: italic;
+}
+
+.footer p {
+    color:var(--muted);
+    margin-bottom: 2rem;
+}
+
+.footer a {
+    color:var(--muted);
+    display:flex;
+    flex-direction: column;
+
+    transition: all 200ms ease;
+}
+
+.footer a:hover {
+    color:var(--green);
+}
